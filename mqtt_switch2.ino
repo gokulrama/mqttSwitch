@@ -9,12 +9,12 @@
 #include <assert.h>
  
 const char* ssid ="Redmi7";
-const char* password ="Balaji29302";
+const char* password ="Bi232";
 
 const char* ssid1 ="HOME";
 const char* password1 ="0000000000";
 
-const char* mqttServer = "vguardbox.com";
+const char* mqttServer = "";
 const int mqttPort = 8883;
 const char* mqttUser = "";
 const char* mqttPassword = "";
@@ -90,8 +90,8 @@ void setup() {
     }
   }
  
-  client.publish("gokul/1", "Hello Gokul");
-  client.subscribe("gokul/1");
+  client.publish("topic", "Hello Gokul");
+  client.subscribe("topic");
  
 }
  
